@@ -49,7 +49,7 @@ def process_pdf(uploaded_file):
 def ask_question(question, vectorstore):
     docs = vectorstore.similarity_search(question, k=3)
     context = "\n\n".join([doc.page_content for doc in docs])
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.3)
     prompt = f"""Use the following context to answer the question.
 If the answer is not in the context, say "I don't know based on the provided documents."
 
