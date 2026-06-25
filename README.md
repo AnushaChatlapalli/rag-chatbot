@@ -34,3 +34,5 @@ An AI-powered chatbot that answers questions based on your own documents using R
 3. Embeddings are stored in a FAISS vector store
 4. User questions are matched to relevant chunks
 5. Gemini generates answers based on the context
+
+🌐 Live Demo: rag-chatbot-ixgspzzpttfbgzht2fykup.streamlit.app
